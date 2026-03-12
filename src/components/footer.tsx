@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { MoveRight } from "lucide-react";
-import { footerNavGroups } from "#/resources";
-import { socialLinks } from "#/resources/social-links";
+import { footerNavGroups, socialLinks } from "#/resources";
 import { Button } from "./ui/button";
 import WavySvg from "./ui/wavy";
 
@@ -9,7 +8,7 @@ export default function Footer() {
 	const year = new Date().getFullYear();
 
 	return (
-		<footer className="mt-20 pb-14 pt-10 ">
+		<footer className="mt-20 pt-10 ">
 			<WavySvg />
 			<section className="bg-[#0a121e] text-white -mt-1 py-4">
 				<div className="container mx-auto px-4">

@@ -6,15 +6,15 @@ export const footerNavGroups: FooterNavGroups = [
 		links: [
 			{
 				label: "Terms of Use",
-				to: "/pricing",
+				to: "/terms-of-use",
 			},
 			{
 				label: "Privacy Policy",
-				to: "/features",
+				to: "/privacy-policy",
 			},
 			{
 				label: "Cookie Policy",
-				to: "/contact",
+				to: "/cookie-policy",
 			},
 		],
 	},
@@ -27,15 +27,15 @@ export const footerNavGroups: FooterNavGroups = [
 			},
 			{
 				label: "Something",
-				to: "/pricing",
+				to: "/something",
 			},
 			{
 				label: "Something Else",
-				to: "/contact",
+				to: "/something-else",
 			},
 			{
 				label: "And Something Else",
-				to: "/contact",
+				to: "/and-something-else",
 			},
 		],
 	},
@@ -44,19 +44,19 @@ export const footerNavGroups: FooterNavGroups = [
 		links: [
 			{
 				label: "Blog",
-				to: "/features",
+				to: "/blog",
 			},
 			{
 				label: "Contact",
-				to: "/pricing",
+				to: "/contact",
 			},
 			{
 				label: "FAQs",
-				to: "/contact",
+				to: "/faqs",
 			},
 			{
 				label: "Help Center",
-				to: "/contact",
+				to: "/help-center",
 			},
 		],
 	},
@@ -69,15 +69,15 @@ export const footerNavGroups: FooterNavGroups = [
 			},
 			{
 				label: "Something2",
-				to: "/pricing",
+				to: "/something2",
 			},
 			{
 				label: "Something Else2",
-				to: "/contact",
+				to: "/something-else2",
 			},
 			{
 				label: "And Something Else2",
-				to: "/contact",
+				to: "/and-something-else2",
 			},
 		],
 	},
