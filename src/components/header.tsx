@@ -2,13 +2,39 @@
 // import RemyButton from "./RemyButton";
 // import ThemeToggle from "./ThemeToggle";
 
+import { Link } from "@tanstack/react-router";
+import { Moon } from "lucide-react";
 import Logo from "@/components/ui/logo";
+import { headerNavLinks } from "@/resources";
 
 export default function Header() {
 	return (
-		<header className="sticky top-0 z-50 border-b border-(--line) bg-(--header-bg) px-4 backdrop-blur-lg">
+		<header className="sticky top-0 z-50 shadow-md px-4 py-6 backdrop-blur-lg flex justify-between items-center">
 			<Logo />
-			<nav>Hello</nav>
+			<div className="flex items-center gap-4">
+				<nav className="flex items-center gap-4">
+					{headerNavLinks.map((link) => (
+						<>
+							<Link
+								to={link.to}
+								className="flex items-center gap-2 text-slate-500 rounded-md px-3 py-1 hover:shadow-md"
+								activeProps={{
+									className:
+										"bg-[linear-gradient(90deg,#015167,#44ac56)] border border-slate-100 shadow-md text-white",
+								}}
+								key={link.to}
+							>
+								<link.icon />
+								{link.label}
+							</Link>
+							<div className="h-4 w-px bg-slate-900" />
+						</>
+					))}
+				</nav>
+				<button type="button" className="text-slate-500">
+					<Moon />
+				</button>
+			</div>
 			{/* <nav className="page-wrap flex flex-wrap items-center gap-x-3 gap-y-2 py-3 sm:py-4">
         <h2 className="m-0 flex-shrink-0 text-base font-semibold tracking-tight">
           <Link
