@@ -4,10 +4,11 @@ import {
 	CarouselContent,
 	CarouselItem,
 } from "#/components/ui/carousel";
+import Section from "@/components/ui/section";
 
 const Hero = () => {
 	return (
-		<section className="w-full min-h-screen">
+		<Section>
 			<div className="py-10">
 				<div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
 					<div className="text-black">
@@ -30,7 +31,7 @@ const Hero = () => {
 					<HeroAnimation />
 				</div>
 			</div>
-		</section>
+		</Section>
 	);
 };
 

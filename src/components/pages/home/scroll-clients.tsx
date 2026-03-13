@@ -1,4 +1,5 @@
 import InfiniteScroll from "#/components/ui/infinite-scroll";
+import Section from "#/components/ui/section";
 
 const partners = [
 	{
@@ -32,7 +33,7 @@ const partners = [
 ];
 const ScrollClients = () => {
 	return (
-		<section className="py-10">
+		<Section className="py-10">
 			<h3 className="text-sm font-bold text-center uppercase pb-10 text-slate-700">
 				official partners with
 			</h3>
@@ -46,7 +47,7 @@ const ScrollClients = () => {
 					</div>
 				))}
 			</InfiniteScroll>
-		</section>
+		</Section>
 	);
 };
 
