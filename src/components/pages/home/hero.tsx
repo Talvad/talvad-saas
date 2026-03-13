@@ -13,7 +13,7 @@ const Hero = () => {
 		<Section>
 			<div className="py-10">
 				<div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-					<div className="text-black space-y-4">
+					<div className="space-y-4">
 						<DottedTitle>the coolest, saas product you have seen</DottedTitle>
 						<H1>Make your life easier with our SaaS</H1>
 						<P>
@@ -71,7 +71,7 @@ const HeroAnimation = () => {
 					{heroAnimationData.map((item) => (
 						<CarouselItem
 							key={item.alt}
-							className="flex flex-col items-center gap-2 border rounded-lg p-4 shadow-lg bg-white"
+							className="flex flex-col items-center gap-2 border rounded-lg p-4 shadow-lg bg-white dark:bg-gray-800"
 						>
 							<Image src={item.img} alt={item.alt} className="w-20 h-20" />
 							<H5>{item.alt}</H5>

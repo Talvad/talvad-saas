@@ -25,7 +25,10 @@ function H5({ className, ...props }: React.ComponentProps<"h5">) {
 	return (
 		<h5
 			{...props}
-			className={cn("text-xl font-semibold text-slate-800", className)}
+			className={cn(
+				"text-xl font-semibold text-slate-800 dark:text-slate-50",
+				className,
+			)}
 		/>
 	);
 }
@@ -34,7 +37,10 @@ function H6({ className, ...props }: React.ComponentProps<"h6">) {
 	return (
 		<h6
 			{...props}
-			className={cn("text-sm font-semibold text-slate-800", className)}
+			className={cn(
+				"text-sm font-semibold text-slate-800 dark:text-slate-50",
+				className,
+			)}
 		/>
 	);
 }
@@ -43,18 +49,26 @@ function DottedTitle({ className, ...props }: React.ComponentProps<"h2">) {
 		<h2
 			{...props}
 			className={cn(
-				'inline-flex items-center gap-2 before:content-[""] before:block before:w-4 before:h-4 before:bg-green-700 text-sm md:text-base font-semibold uppercase',
+				'inline-flex items-center gap-2 before:content-[""] before:block before:w-4 before:h-4 before:bg-green-700 text-sm md:text-base font-semibold uppercase text-slate-800 dark:text-slate-50',
 				className,
 			)}
 		/>
 	);
 }
 function P({ className, ...props }: React.ComponentProps<"p">) {
-	return <p {...props} className={cn("text-xl text-slate-800", className)} />;
+	return (
+		<p
+			{...props}
+			className={cn("text-xl text-slate-800 dark:text-slate-50", className)}
+		/>
+	);
 }
 function Sm({ className, ...props }: React.ComponentProps<"span">) {
 	return (
-		<span {...props} className={cn("text-sm text-slate-800", className)} />
+		<span
+			{...props}
+			className={cn("text-sm text-slate-800 dark:text-slate-50", className)}
+		/>
 	);
 }
 export { H1, H2, H3, H4, H5, H6, P, DottedTitle, Sm };
