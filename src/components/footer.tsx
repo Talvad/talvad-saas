@@ -2,15 +2,15 @@ import { Link } from "@tanstack/react-router";
 import { MoveRight } from "lucide-react";
 import { footerNavGroups, socialLinks } from "#/resources";
 import { Button } from "./ui/button";
-import WavySvg from "./ui/wavy";
+import { Image } from "./ui/image";
 
 export default function Footer() {
 	const year = new Date().getFullYear();
 
 	return (
-		<footer className="mt-20 pt-10 ">
-			<WavySvg />
-			<section className="bg-[#0a121e] text-white -mt-1 py-4">
+		<footer className=" ">
+			<Image src="/images/homepage/hero/wavy.svg" alt="Wavy" />
+			<section className="bg-[#0a121e] text-white -mt-1 pb-4">
 				<div className="container mx-auto px-4">
 					<h1 className="text-4xl md:text-6xl px-5 md:px-10 text-center font-bold">
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
@@ -26,7 +26,7 @@ export default function Footer() {
 						</Button>
 						<Button
 							size={"lg"}
-							className="border border-white bg-transparent rounded-sm cursor-pointer px-10 py-6 hover:scale-105 transition duration-300 ease-in-out uppercase font-bold text-sm w-full md:w-auto"
+							className="border border-white bg-transparent rounded-sm cursor-pointer px-10 py-6 hover:scale-105 transition duration-300 ease-in-out uppercase font-bold text-sm w-full md:w-auto text-white"
 						>
 							features
 							<MoveRight />
@@ -55,7 +55,11 @@ export default function Footer() {
 									target="_blank"
 									rel="noreferrer"
 								>
-									{link.icon({ className: "w-10 h-10" })}
+									<Image
+										src={link.icon}
+										alt={link.label}
+										className="w-10 h-10"
+									/>
 								</a>
 							))}
 						</div>

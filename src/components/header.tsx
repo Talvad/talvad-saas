@@ -1,18 +1,18 @@
 import { Link } from "@tanstack/react-router";
-import { Menu, Moon, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Logo from "@/components/ui/logo";
 import { headerNavLinks } from "@/resources";
 import { Button } from "./ui/button";
 import {
 	Drawer,
-	DrawerClose,
 	DrawerContent,
 	DrawerDescription,
 	DrawerHeader,
 	DrawerTitle,
 	DrawerTrigger,
 } from "./ui/drawer";
+import ThemeToggle from "./ui/theme-toggle";
 
 export default function Header() {
 	return (
@@ -20,9 +20,7 @@ export default function Header() {
 			<Logo />
 			<div className="flex items-center gap-4">
 				<Nav />
-				<button type="button" className="text-slate-500">
-					<Moon />
-				</button>
+				<ThemeToggle />
 			</div>
 		</header>
 	);

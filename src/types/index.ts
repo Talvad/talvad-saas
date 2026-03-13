@@ -1,5 +1,4 @@
 import type { LucideIcon } from "lucide-react";
-import type { ReactNode } from "react";
 
 export type HeaderNavLink = {
 	label: string;
@@ -21,6 +20,6 @@ export type FooterNavGroups = FooterNavGroup[];
 export type SocialLink = {
 	label: string;
 	to: string;
-	icon: ReactNode;
+	icon: string;
 };
 export type SocialLinks = SocialLink[];
