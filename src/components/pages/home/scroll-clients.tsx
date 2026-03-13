@@ -1,5 +1,7 @@
+import { Image } from "#/components/ui/image";
 import InfiniteScroll from "#/components/ui/infinite-scroll";
 import Section from "#/components/ui/section";
+import { H6 } from "#/components/ui/typography";
 
 const partners = [
 	{
@@ -33,17 +35,17 @@ const partners = [
 ];
 const ScrollClients = () => {
 	return (
-		<Section className="py-10">
-			<h3 className="text-sm font-bold text-center uppercase pb-10 text-slate-700">
+		<Section className="py-10 space-y-8">
+			<H6 className="text-center uppercase font-bold ">
 				official partners with
-			</h3>
+			</H6>
 			<InfiniteScroll>
 				{partners.map((partner) => (
 					<div
 						key={partner.alt}
 						className="flex items-center justify-center w-64 h-10 border rounded-lg bg-white"
 					>
-						<img src={partner.img} alt={partner.alt} className="p-2" />
+						<Image alt={partner.alt} className="p-2" src={partner.img} />
 					</div>
 				))}
 			</InfiniteScroll>
