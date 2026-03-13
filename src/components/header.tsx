@@ -6,7 +6,6 @@ import { headerNavLinks } from "@/resources";
 import { Button } from "./ui/button";
 import {
 	Drawer,
-	DrawerClose,
 	DrawerContent,
 	DrawerDescription,
 	DrawerHeader,

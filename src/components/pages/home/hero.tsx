@@ -37,27 +37,27 @@ const Hero = () => {
 export default Hero;
 const heroAnimationData = [
 	{
-		img: "/images/homepage/research.svg",
+		img: "/images/homepage/hero/research.svg",
 		alt: "Research",
 		description: "Constant Research on latest trends to implement ideas",
 	},
 	{
-		img: "/images/homepage/plan.svg",
+		img: "/images/homepage/hero/plan.svg",
 		alt: "Plan",
 		description: "Plan your business with our SaaS",
 	},
 	{
-		img: "/images/homepage/implement.svg",
+		img: "/images/homepage/hero/implement.svg",
 		alt: "Implement",
 		description: "Implement your business with our SaaS",
 	},
 	{
-		img: "/images/homepage/improve.svg",
+		img: "/images/homepage/hero/improve.svg",
 		alt: "Improve",
 		description: "Improve your business with our SaaS",
 	},
 	{
-		img: "/images/homepage/repeat.svg",
+		img: "/images/homepage/hero/repeat.svg",
 		alt: "Repeat",
 		description: "Repeat your business with our SaaS",
 	},
@@ -75,7 +75,7 @@ const HeroAnimation = () => {
 					{heroAnimationData.map((item) => (
 						<CarouselItem
 							key={item.alt}
-							className="flex flex-col items-center gap-2 border rounded-lg p-4 shadow-lg"
+							className="flex flex-col items-center gap-2 border rounded-lg p-4 shadow-lg bg-white"
 						>
 							<div className="flex items-center gap-2">
 								<img src={item.img} alt={item.alt} className="w-20 h-20" />

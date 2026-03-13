@@ -7,7 +7,7 @@ export const Route = createFileRoute("/")({
 
 function HomePage() {
 	return (
-		<main className="bg-[url(/images/homepage/talvad_hero_bg.png)] container mx-auto px-4 pb-20">
+		<main className="bg-[url(/images/homepage/talvad_hero_bg.png)] container mx-auto px-4 pb-70 -mb-70">
 			<Hero />
 			<ScrollClients />
 		</main>
