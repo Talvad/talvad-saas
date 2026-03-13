@@ -6,5 +6,9 @@ export const Route = createFileRoute("/")({
 });
 
 function HomePage() {
-	return <Hero />;
+	return (
+		<main className="bg-[url(/images/homepage/talvad_hero_bg.png)] container mx-auto px-4">
+			<Hero />
+		</main>
+	);
 }
