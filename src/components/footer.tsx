@@ -8,9 +8,9 @@ export default function Footer() {
 	const year = new Date().getFullYear();
 
 	return (
-		<footer className="mt-20 pt-10 ">
+		<footer className=" ">
 			<WavySvg />
-			<section className="bg-[#0a121e] text-white -mt-1 py-4">
+			<section className="bg-[#0a121e] text-white -mt-1 pb-4">
 				<div className="container mx-auto px-4">
 					<h1 className="text-4xl md:text-6xl px-5 md:px-10 text-center font-bold">
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
