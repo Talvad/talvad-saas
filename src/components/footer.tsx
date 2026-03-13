@@ -26,7 +26,7 @@ export default function Footer() {
 						</Button>
 						<Button
 							size={"lg"}
-							className="border border-white bg-transparent rounded-sm cursor-pointer px-10 py-6 hover:scale-105 transition duration-300 ease-in-out uppercase font-bold text-sm w-full md:w-auto"
+							className="border border-white bg-transparent rounded-sm cursor-pointer px-10 py-6 hover:scale-105 transition duration-300 ease-in-out uppercase font-bold text-sm w-full md:w-auto text-white"
 						>
 							features
 							<MoveRight />
