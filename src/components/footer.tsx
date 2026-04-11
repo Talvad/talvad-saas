@@ -28,13 +28,13 @@ export default function Footer() {
 				<div className="mt-6 md:mt-0 flex gap-4">
 					<a
 						className="text-slate-400 hover:text-indigo-600 transition-colors"
-						href="#"
+						href="/language"
 					>
 						<Earth className="text-lg" />
 					</a>
 					<a
 						className="text-slate-400 hover:text-indigo-600 transition-colors"
-						href="#"
+						href="/location"
 					>
 						<Globe className="text-lg" />
 					</a>
