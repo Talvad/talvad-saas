@@ -1,3 +1,5 @@
+import { ArrowRight } from "lucide-react";
+
 const Hero = () => {
 	return (
 		<section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden px-8">
@@ -25,12 +27,10 @@ const Hero = () => {
 				<div className="flex flex-col sm:flex-row items-center justify-center gap-6">
 					<button
 						type="button"
-						className="group relative px-8 py-4 bg-indigo-600 text-white font-headline font-bold rounded-xl transition-all hover:shadow-[0_10px_30px_rgba(79,70,229,0.2)] active:scale-95"
+						className="flex items-center group relative px-8 py-4 bg-indigo-600 text-white font-headline font-bold rounded-xl transition-all hover:shadow-[0_10px_30px_rgba(79,70,229,0.2)] active:scale-95"
 					>
 						Start Building Free
-						<span className="ml-2 material-symbols-outlined align-middle transition-transform group-hover:translate-x-1">
-							arrow_forward
-						</span>
+						<ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
 					</button>
 					<button
 						type="button"

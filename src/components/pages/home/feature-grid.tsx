@@ -1,3 +1,16 @@
+import {
+	Braces,
+	ChartColumnStacked,
+	ChevronsLeftRightEllipsis,
+	Cloud,
+	Code,
+	Component,
+	Database,
+	Shield,
+	SquareTerminal,
+	Zap,
+} from "lucide-react";
+
 const FeatureGrid = () => {
 	return (
 		<section className="py-32 px-8 max-w-7xl mx-auto">
@@ -15,7 +28,7 @@ const FeatureGrid = () => {
 				<div className="md:col-span-8 bg-white border border-slate-200 rounded-2xl p-8 flex flex-col justify-between min-h-[400px] group hover:border-indigo-300 transition-all hover:shadow-xl hover:shadow-indigo-500/5">
 					<div>
 						<div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 mb-6">
-							<span className="material-symbols-outlined">analytics</span>
+							<ChartColumnStacked />
 						</div>
 						<h3 className="text-2xl font-headline font-bold mb-4 text-slate-900">
 							Neural Data Synthesis
@@ -36,7 +49,7 @@ const FeatureGrid = () => {
 				{/* <!-- Feature 2: Small --> */}
 				<div className="md:col-span-4 bg-indigo-50 border border-indigo-100 rounded-2xl p-8 flex flex-col group hover:bg-indigo-100/50 transition-colors">
 					<div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-indigo-600 mb-6 shadow-sm">
-						<span className="material-symbols-outlined">bolt</span>
+						<Zap />
 					</div>
 					<h3 className="text-2xl font-headline font-bold mb-4 text-indigo-900">
 						Real-time Velocity
@@ -50,7 +63,7 @@ const FeatureGrid = () => {
 							<div className="h-2 w-full bg-indigo-200/50 rounded-full overflow-hidden">
 								<div className="h-full w-4/5 bg-indigo-600 shadow-[0_0_10px_rgba(79,70,229,0.3)]"></div>
 							</div>
-							<span className="text-[10px] font-bold text-indigo-600 ml-2">
+							<span className="text-[10px] font-bold text-indigo-600 ml-2 text-nowrap">
 								99.9%
 							</span>
 						</div>
@@ -59,7 +72,7 @@ const FeatureGrid = () => {
 				{/* <!-- Feature 3: Small --> */}
 				<div className="md:col-span-4 bg-white border border-slate-200 rounded-2xl p-8 group hover:border-indigo-300 transition-colors">
 					<div className="w-12 h-12 rounded-xl bg-violet-50 flex items-center justify-center text-violet-600 mb-6">
-						<span className="material-symbols-outlined">shield</span>
+						<Shield />
 					</div>
 					<h3 className="text-2xl font-headline font-bold mb-4 text-slate-900">
 						Fortress Protocol
@@ -73,7 +86,7 @@ const FeatureGrid = () => {
 				<div className="md:col-span-8 bg-slate-50 border border-slate-200 rounded-2xl p-8 flex flex-col md:flex-row gap-8 items-center">
 					<div className="flex-1">
 						<div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-indigo-600 mb-6 shadow-sm">
-							<span className="material-symbols-outlined">hub</span>
+							<Component />
 						</div>
 						<h3 className="text-2xl font-headline font-bold mb-4 text-slate-900">
 							Unified Ecosystem
@@ -85,24 +98,22 @@ const FeatureGrid = () => {
 					</div>
 					<div className="flex-1 grid grid-cols-3 gap-3">
 						<div className="aspect-square bg-white rounded-lg flex items-center justify-center border border-slate-200 text-slate-400 hover:text-indigo-600 hover:border-indigo-200 transition-all">
-							<span className="material-symbols-outlined">terminal</span>
+							<SquareTerminal />
 						</div>
 						<div className="aspect-square bg-white rounded-lg flex items-center justify-center border border-slate-200 text-slate-400 hover:text-indigo-600 hover:border-indigo-200 transition-all">
-							<span className="material-symbols-outlined">database</span>
+							<Database />
 						</div>
 						<div className="aspect-square bg-white rounded-lg flex items-center justify-center border border-slate-200 text-slate-400 hover:text-indigo-600 hover:border-indigo-200 transition-all">
-							<span className="material-symbols-outlined">cloud</span>
+							<Cloud />
 						</div>
 						<div className="aspect-square bg-white rounded-lg flex items-center justify-center border border-slate-200 text-slate-400 hover:text-indigo-600 hover:border-indigo-200 transition-all">
-							<span className="material-symbols-outlined">api</span>
+							<Braces />
 						</div>
 						<div className="aspect-square bg-white rounded-lg flex items-center justify-center border border-slate-200 text-slate-400 hover:text-indigo-600 hover:border-indigo-200 transition-all">
-							<span className="material-symbols-outlined">code</span>
+							<Code />
 						</div>
 						<div className="aspect-square bg-white rounded-lg flex items-center justify-center border border-slate-200 text-slate-400 hover:text-indigo-600 hover:border-indigo-200 transition-all">
-							<span className="material-symbols-outlined">
-								settings_ethernet
-							</span>
+							<ChevronsLeftRightEllipsis />
 						</div>
 					</div>
 				</div>
