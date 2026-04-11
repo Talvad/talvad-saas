@@ -1,74 +1,56 @@
-import { Link } from "@tanstack/react-router";
-import { MoveRight } from "lucide-react";
-import { footerNavGroups, socialLinks } from "#/resources";
-import { Button } from "./ui/button";
-import { Image } from "./ui/image";
-
 export default function Footer() {
-	const year = new Date().getFullYear();
-
 	return (
-		<footer className=" ">
-			<Image src="/images/homepage/hero/wavy.svg" alt="Wavy" />
-			<section className="bg-[#0a121e] text-white -mt-1 pb-4">
-				<div className="container mx-auto px-4">
-					<h1 className="text-4xl md:text-6xl px-5 md:px-10 text-center font-bold">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
-						delectus?.
-					</h1>
-					<div className="flex flex-col md:flex-row items-center justify-center gap-8 py-10">
-						<Button
-							size={"lg"}
-							className="border border-white bg-blue-500 rounded-sm cursor-pointer px-1 md:px-10 py-6 hover:scale-105 transition duration-300 ease-in-out uppercase font-bold text-sm w-full md:w-auto"
-						>
-							subscribe to the newsletter
-							<MoveRight />
-						</Button>
-						<Button
-							size={"lg"}
-							className="border border-white bg-transparent rounded-sm cursor-pointer px-10 py-6 hover:scale-105 transition duration-300 ease-in-out uppercase font-bold text-sm w-full md:w-auto text-white"
-						>
-							features
-							<MoveRight />
-						</Button>
+		<footer className="bg-slate-50 w-full border-t border-slate-200/15">
+			<div className="flex flex-col md:flex-row justify-between items-center px-12 py-8 w-full">
+				<div className="mb-6 md:mb-0">
+					<div className="font-black text-lg text-slate-900 font-headline mb-2">
+						TALVAD
 					</div>
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-						{footerNavGroups.map((group) => (
-							<div key={group.title} className="shadow-lg p-6 bg-[#1b232f]">
-								<h2 className="text-2xl font-bold pb-4">{group.title}</h2>
-								<nav className="flex flex-col gap-2">
-									{group.links.map((link) => (
-										<Link key={link.label} to={link.to}>
-											{link.label}
-										</Link>
-									))}
-								</nav>
-							</div>
-						))}
-					</div>
-					<div className="flex flex-col md:flex-row items-center justify-between gap-8 pt-10">
-						<div className="flex items-center justify-center gap-4">
-							{socialLinks.map((link) => (
-								<a
-									href={link.to}
-									key={link.label}
-									target="_blank"
-									rel="noreferrer"
-								>
-									<Image
-										src={link.icon}
-										alt={link.label}
-										className="w-10 h-10"
-									/>
-								</a>
-							))}
-						</div>
-						<p className="text-xs">
-							&copy; {year} Talvad. All rights reserved.
-						</p>
-					</div>
+					<p className="font-manrope text-xs tracking-wide text-slate-400">
+						© 2024 TALVAD. The Ethereal Lab Edition.
+					</p>
 				</div>
-			</section>
+				<div className="flex flex-wrap justify-center gap-8 font-manrope text-xs tracking-wide">
+					<a
+						className="text-slate-500 hover:underline decoration-indigo-500 underline-offset-4 transition-all opacity-80 hover:opacity-100"
+						href="#"
+					>
+						Privacy Policy
+					</a>
+					<a
+						className="text-slate-500 hover:underline decoration-indigo-500 underline-offset-4 transition-all opacity-80 hover:opacity-100"
+						href="#"
+					>
+						Terms of Service
+					</a>
+					<a
+						className="text-slate-500 hover:underline decoration-indigo-500 underline-offset-4 transition-all opacity-80 hover:opacity-100"
+						href="#"
+					>
+						Security
+					</a>
+					<a
+						className="text-slate-500 hover:underline decoration-indigo-500 underline-offset-4 transition-all opacity-80 hover:opacity-100"
+						href="#"
+					>
+						Status
+					</a>
+				</div>
+				<div className="mt-6 md:mt-0 flex gap-4">
+					<a
+						className="text-slate-400 hover:text-indigo-600 transition-colors"
+						href="#"
+					>
+						<span className="material-symbols-outlined text-lg">public</span>
+					</a>
+					<a
+						className="text-slate-400 hover:text-indigo-600 transition-colors"
+						href="#"
+					>
+						<span className="material-symbols-outlined text-lg">language</span>
+					</a>
+				</div>
+			</div>
 		</footer>
 	);
 }
