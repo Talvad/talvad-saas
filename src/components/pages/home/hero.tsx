@@ -44,7 +44,7 @@ const Hero = () => {
 						<img
 							alt="SaaS Dashboard Preview"
 							className="rounded-xl w-full"
-							src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe1uovIh2acODtTfBXUUaV2_6NVXLMSHPi_l5u3z4jHQ6Arp6iWxS78RmHEzzqCquiPpi0nv4rgN82JymreXrn3G9D92bYUw6oeHz6qqR4zdYMOAxcbiKkyozV0EY4HAVxZ7SrvHoGFfQeSLEct5VJtlXRBKF96JXUuzEDS45Ofxgn5g-nbfdb2xPLYJIWl6se6EDGudB_-Z0lFPx0h_C5HqVhYbTJ0KEUWue_B6adbEluPDnT2p9xNhJJTXEzWeSeBlJf9TlTWjs7"
+							src="./images/homepage/hero/sass_dash.png"
 						/>
 					</div>
 				</div>
