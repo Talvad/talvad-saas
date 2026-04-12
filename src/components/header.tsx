@@ -27,12 +27,7 @@ export default function Header() {
 				</div>
 				<div className="flex items-center gap-4">
 					<ThemeToggle />
-					<button
-						type="button"
-						className="hidden sm:block text-slate-500 hover:bg-slate-50 p-2 rounded-lg transition-colors"
-					>
-						<Settings />
-					</button>
+
 					<button
 						type="button"
 						className="px-5 py-2 rounded-lg bg-primary text-on-primary-fixed  font-manrope font-bold text-sm active:scale-90 transform transition-transform duration-200"

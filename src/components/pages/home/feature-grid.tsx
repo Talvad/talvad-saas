@@ -15,30 +15,30 @@ const FeatureGrid = () => {
 	return (
 		<section className="py-32 px-8 max-w-7xl mx-auto">
 			<div className="mb-20">
-				<h2 className="text-3xl md:text-5xl font-headline font-extrabold tracking-tight mb-6 text-slate-900">
+				<h2 className="text-3xl md:text-5xl font-headline font-extrabold tracking-tight mb-6 ">
 					Designed for the <span className="text-indigo-600">0.1%.</span>
 				</h2>
-				<p className="text-slate-600 max-w-xl text-lg">
+				<p className="text-on-surface-variant max-w-xl text-lg">
 					We stripped away the noise to give you pure, unadulterated focus. Your
 					workflow, magnified.
 				</p>
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-12 gap-6">
 				{/* <!-- Feature 1: Large --> */}
-				<div className="md:col-span-8 bg-white border border-slate-200 rounded-2xl p-8 flex flex-col justify-between min-h-[400px] group hover:border-indigo-300 transition-all hover:shadow-xl hover:shadow-indigo-500/5">
+				<div className="md:col-span-8 bg-surface-container rounded-2xl p-8 flex flex-col justify-between min-h-[400px] group hover:bg-surface-container-high transition-colors">
 					<div>
-						<div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 mb-6">
+						<div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6">
 							<ChartColumnStacked />
 						</div>
-						<h3 className="text-2xl font-headline font-bold mb-4 text-slate-900">
+						<h3 className="text-2xl font-headline font-bold mb-4 ">
 							Neural Data Synthesis
 						</h3>
-						<p className="text-slate-600 leading-relaxed max-w-md">
+						<p className="text-on-surface-variant leading-relaxed max-w-md">
 							Our proprietary engine connects your disparate data sources and
 							visualizes them through a single lens of truth.
 						</p>
 					</div>
-					<div className="mt-8 rounded-xl overflow-hidden border border-slate-100">
+					<div className="mt-8 rounded-xl overflow-hidden outline outline-outline-variant/15">
 						<img
 							alt="Data Synthesis Visualization"
 							className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-700"
@@ -47,73 +47,73 @@ const FeatureGrid = () => {
 					</div>
 				</div>
 				{/* <!-- Feature 2: Small --> */}
-				<div className="md:col-span-4 bg-indigo-50 border border-indigo-100 rounded-2xl p-8 flex flex-col group hover:bg-indigo-100/50 transition-colors">
-					<div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-indigo-600 mb-6 shadow-sm">
+				<div className="md:col-span-4 bg-surface-container-highest rounded-2xl p-8 flex flex-col group hover:bg-surface-bright transition-colors">
+					<div className="w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center text-tertiary mb-6">
 						<Zap />
 					</div>
-					<h3 className="text-2xl font-headline font-bold mb-4 text-indigo-900">
+					<h3 className="text-2xl font-headline font-bold mb-4">
 						Real-time Velocity
 					</h3>
-					<p className="text-indigo-800/70 leading-relaxed">
+					<p className="text-on-surface-variant leading-relaxed">
 						Zero latency synchronization across your global workforce. If it
 						happens there, you see it here. Instantly.
 					</p>
 					<div className="mt-auto pt-8">
 						<div className="flex items-center gap-1">
-							<div className="h-2 w-full bg-indigo-200/50 rounded-full overflow-hidden">
-								<div className="h-full w-4/5 bg-indigo-600 shadow-[0_0_10px_rgba(79,70,229,0.3)]"></div>
+							<div className="h-1 w-full bg-tertiary/20 rounded-full overflow-hidden">
+								<div className="h-full w-4/5 bg-tertiary shadow-[0_0_10px_#ffa4e4]"></div>
 							</div>
-							<span className="text-[10px] font-bold text-indigo-600 ml-2 text-nowrap">
+							<span className="text-[10px] font-bold text-tertiary ml-2 text-nowrap">
 								99.9%
 							</span>
 						</div>
 					</div>
 				</div>
 				{/* <!-- Feature 3: Small --> */}
-				<div className="md:col-span-4 bg-white border border-slate-200 rounded-2xl p-8 group hover:border-indigo-300 transition-colors">
-					<div className="w-12 h-12 rounded-xl bg-violet-50 flex items-center justify-center text-violet-600 mb-6">
+				<div className="md:col-span-4 bg-surface-container-high rounded-2xl p-8 group hover:bg-surface-container transition-colors">
+					<div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-6">
 						<Shield />
 					</div>
-					<h3 className="text-2xl font-headline font-bold mb-4 text-slate-900">
+					<h3 className="text-2xl font-headline font-bold mb-4">
 						Fortress Protocol
 					</h3>
-					<p className="text-slate-600 leading-relaxed">
+					<p className="text-on-surface-variant leading-relaxed">
 						Enterprise-grade encryption is our baseline. Your data never leaves
 						your governance zone.
 					</p>
 				</div>
 				{/* <!-- Feature 4: Large --> */}
-				<div className="md:col-span-8 bg-slate-50 border border-slate-200 rounded-2xl p-8 flex flex-col md:flex-row gap-8 items-center">
+				<div className="md:col-span-8 bg-surface-container-low rounded-2xl p-8 flex flex-col md:flex-row gap-8 items-center border border-outline-variant/10">
 					<div className="flex-1">
-						<div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-indigo-600 mb-6 shadow-sm">
+						<div className="w-12 h-12 rounded-xl bg-primary-dim/10 flex items-center justify-center text-primary-dim mb-6">
 							<Component />
 						</div>
-						<h3 className="text-2xl font-headline font-bold mb-4 text-slate-900">
+						<h3 className="text-2xl font-headline font-bold mb-4">
 							Unified Ecosystem
 						</h3>
-						<p className="text-slate-600 leading-relaxed">
+						<p className="text-on-surface-variant leading-relaxed">
 							Native integrations with 100+ platforms. Stop context switching
 							and start executing.
 						</p>
 					</div>
 					<div className="flex-1 grid grid-cols-3 gap-3">
-						<div className="aspect-square bg-white rounded-lg flex items-center justify-center border border-slate-200 text-slate-400 hover:text-indigo-600 hover:border-indigo-200 transition-all">
-							<SquareTerminal />
+						<div className="aspect-square bg-surface-container rounded-lg flex items-center justify-center border border-outline-variant/10">
+							<SquareTerminal className="text-on-surface-variant" />
 						</div>
-						<div className="aspect-square bg-white rounded-lg flex items-center justify-center border border-slate-200 text-slate-400 hover:text-indigo-600 hover:border-indigo-200 transition-all">
-							<Database />
+						<div className="aspect-square bg-surface-container rounded-lg flex items-center justify-center border border-outline-variant/10">
+							<Database className="text-on-surface-variant" />
 						</div>
-						<div className="aspect-square bg-white rounded-lg flex items-center justify-center border border-slate-200 text-slate-400 hover:text-indigo-600 hover:border-indigo-200 transition-all">
-							<Cloud />
+						<div className="aspect-square bg-surface-container rounded-lg flex items-center justify-center border border-outline-variant/10">
+							<Cloud className="text-on-surface-variant" />
 						</div>
-						<div className="aspect-square bg-white rounded-lg flex items-center justify-center border border-slate-200 text-slate-400 hover:text-indigo-600 hover:border-indigo-200 transition-all">
-							<Braces />
+						<div className="aspect-square bg-surface-container rounded-lg flex items-center justify-center border border-outline-variant/10">
+							<Braces className="text-on-surface-variant" />
 						</div>
-						<div className="aspect-square bg-white rounded-lg flex items-center justify-center border border-slate-200 text-slate-400 hover:text-indigo-600 hover:border-indigo-200 transition-all">
-							<Code />
+						<div className="aspect-square bg-surface-container rounded-lg flex items-center justify-center border border-outline-variant/10">
+							<Code className="text-on-surface-variant" />
 						</div>
-						<div className="aspect-square bg-white rounded-lg flex items-center justify-center border border-slate-200 text-slate-400 hover:text-indigo-600 hover:border-indigo-200 transition-all">
-							<ChevronsLeftRightEllipsis />
+						<div className="aspect-square bg-surface-container rounded-lg flex items-center justify-center border border-outline-variant/10">
+							<ChevronsLeftRightEllipsis className="text-on-surface-variant" />
 						</div>
 					</div>
 				</div>

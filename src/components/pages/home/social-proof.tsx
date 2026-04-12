@@ -31,9 +31,9 @@ const partners = [
 
 const SocialProof = () => {
 	return (
-		<section className="py-24 bg-slate-50">
+		<section className="py-24 bg-surface-container-low/30">
 			<div className="max-w-7xl mx-auto px-8">
-				<p className="text-center text-slate-400 font-label text-sm uppercase tracking-[0.2em] mb-12">
+				<p className="text-center text-on-surface-variant font-label text-sm uppercase tracking-[0.2em] mb-12">
 					Trusted by the innovators at
 				</p>
 				<div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-700">

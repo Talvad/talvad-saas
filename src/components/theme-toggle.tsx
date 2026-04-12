@@ -1,3 +1,4 @@
+import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export function ThemeToggle() {
@@ -31,7 +32,7 @@ export function ThemeToggle() {
 			onClick={toggleTheme}
 			className="p-2 rounded-lg border border-on-surface/10 bg-surface text-on-surface hover:opacity-80 transition-opacity"
 		>
-			{theme === "light" ? "🌙 " : "☀️ "}
+			{theme === "light" ? <Moon /> : <Sun />}
 		</button>
 	);
 }
