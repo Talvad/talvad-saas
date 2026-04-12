@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Settings } from "lucide-react";
 import { headerNavLinks } from "#/resources";
+import { ThemeToggle } from "./theme-toggle";
 
 export default function Header() {
 	return (
@@ -9,7 +10,7 @@ export default function Header() {
 			<div className="flex justify-between items-center px-8 h-16 w-full max-w-screen-2xl mx-auto">
 				<Link
 					to="/"
-					className="text-2xl font-bold tracking-tighter text-slate-900 font-headline"
+					className="text-2xl font-bold tracking-tighter text-primary font-headline"
 				>
 					TALVAD
 				</Link>
@@ -25,6 +26,7 @@ export default function Header() {
 					))}
 				</div>
 				<div className="flex items-center gap-4">
+					<ThemeToggle />
 					<button
 						type="button"
 						className="hidden sm:block text-slate-500 hover:bg-slate-50 p-2 rounded-lg transition-colors"
@@ -33,7 +35,7 @@ export default function Header() {
 					</button>
 					<button
 						type="button"
-						className="px-5 py-2 rounded-lg bg-indigo-600 text-white font-manrope font-bold text-sm active:scale-90 transform transition-transform duration-200"
+						className="px-5 py-2 rounded-lg bg-primary text-on-primary-fixed  font-manrope font-bold text-sm active:scale-90 transform transition-transform duration-200"
 					>
 						Get Started
 					</button>

@@ -4,10 +4,10 @@ import { footerNavLinks } from "#/resources";
 
 export default function Footer() {
 	return (
-		<footer className="bg-slate-50 w-full border-t border-slate-200/15">
+		<footer className="bg-slate-50 dark:bg-[#0b082f] w-full border-t border-slate-200 dark:border-none">
 			<div className="flex flex-col md:flex-row justify-between items-center px-12 py-8 w-full">
 				<div className="mb-6 md:mb-0">
-					<div className="font-black text-lg text-slate-900 font-headline mb-2">
+					<div className="font-black text-lg text-primary font-headline mb-2">
 						TALVAD
 					</div>
 					<p className="font-manrope text-xs tracking-wide text-slate-400">

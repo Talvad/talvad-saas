@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#0b082f",
+                      "primary-dim": "#4963ff",
+                      "on-surface": "#e7e2ff",
+                      "primary": "#9ba8ff",
+                      "primary-container": "#8999ff",
+                      "secondary-dim": "#9891fe",
+                      "primary-fixed": "#8999ff",
+                      "outline": "#74719c",
+                      "on-error-container": "#ffb2b9",
+                      "error-container": "#a70138",
+                      "on-tertiary-fixed-variant": "#6c135c",
+                      "on-background": "#e7e2ff",
+                      "error-dim": "#d73357",
+                      "tertiary-fixed-dim": "#ea82ce",
+                      "on-primary": "#001c8e",
+                      "surface-tint": "#9ba8ff",
+                      "on-primary-container": "#001470",
+                      "on-secondary-container": "#d0cbff",
+                      "tertiary-dim": "#ea82ce",
+                      "secondary-fixed-dim": "#c2bdff",
+                      "surface-container": "#171241",
+                      "surface-container-highest": "#221e55",
+                      "tertiary-container": "#f98fdc",
+                      "surface-container-high": "#1c184b",
+                      "inverse-primary": "#2949ef",
+                      "on-surface-variant": "#aaa6d5",
+                      "error": "#ff6e84",
+                      "inverse-surface": "#fcf8ff",
+                      "on-secondary-fixed": "#2d1f8c",
+                      "secondary": "#9891fe",
+                      "on-tertiary-container": "#600653",
+                      "surface-variant": "#221e55",
+                      "on-primary-fixed": "#000000",
+                      "surface": "#0b082f",
+                      "on-tertiary-fixed": "#390030",
+                      "outline-variant": "#46436c",
+                      "surface-bright": "#28245f",
+                      "on-primary-fixed-variant": "#001a88",
+                      "secondary-fixed": "#d1ccff",
+                      "on-secondary-fixed-variant": "#4a41aa",
+                      "tertiary-fixed": "#f98fdc",
+                      "surface-dim": "#0b082f",
+                      "primary-fixed-dim": "#778aff",
+                      "surface-container-low": "#100c37",
+                      "secondary-container": "#40369f",
+                      "surface-container-lowest": "#000000",
+                      "inverse-on-surface": "#53507a",
+                      "on-secondary": "#170074",
+                      "on-error": "#490013",
+                      "on-tertiary": "#6d155d",
+                      "tertiary": "#ffa4e4"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-glow {
+            background: radial-gradient(circle at 50% 50%, rgba(155, 168, 255, 0.1) 0%, rgba(11, 8, 47, 0) 70%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-[#0b082f]/80 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_20px_50px_rgba(0,28,142,0.1)]">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-indigo-600 dark:text-[#9ba8ff] font-headline">
+                TALVAD
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-headline font-bold tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-indigo-500 dark:hover:text-[#9ba8ff] transition-colors" href="#">Features</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-indigo-500 dark:hover:text-[#9ba8ff] transition-colors" href="#">Pricing</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-indigo-500 dark:hover:text-[#9ba8ff] transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2.5 rounded-lg bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed font-headline font-bold active:scale-95 transform transition-transform duration-200">
+                    Get Started
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center justify-center overflow-hidden px-8">
+<div class="absolute inset-0 glass-glow -z-10"></div>
+<div class="absolute top-1/4 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-tertiary/10 rounded-full blur-[120px]"></div>
+<div class="max-w-5xl mx-auto text-center">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-high mb-8">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_#ffa4e4]"></span>
+<span class="text-xs font-label font-medium tracking-wider text-on-surface-variant uppercase">New: Workflow Automations 2.0</span>
+</div>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-headline font-extrabold tracking-tight mb-8 text-on-surface">
+                    Optimize Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-tertiary">Digital Flow.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mb-12 leading-relaxed">
+                    The Neon Observatory for modern teams. Consolidate your fragmented stack into a single, high-fidelity command center powered by intelligence.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="group relative px-8 py-4 bg-primary text-on-primary font-headline font-bold rounded-xl transition-all hover:shadow-[0_0_30px_rgba(155,168,255,0.4)]">
+                        Start Building Free
+                        <span class="ml-2 material-symbols-outlined align-middle transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<button class="px-8 py-4 bg-surface-container-highest text-on-surface font-headline font-bold rounded-xl outline outline-1 outline-outline-variant/15 hover:bg-surface-bright transition-colors">
+                        View Demo
+                    </button>
+</div>
+<div class="mt-20 relative px-4">
+<div class="rounded-2xl overflow-hidden shadow-2xl shadow-black/50 outline outline-1 outline-outline-variant/15 bg-surface-container-low p-2">
+<img alt="SaaS Dashboard Preview" class="rounded-xl w-full" data-alt="Sophisticated dark mode SaaS dashboard interface showing complex data visualizations, neon glowing progress charts, and elegant glassmorphic sidebar panels." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe1uovIh2acODtTfBXUUaV2_6NVXLMSHPi_l5u3z4jHQ6Arp6iWxS78RmHEzzqCquiPpi0nv4rgN82JymreXrn3G9D92bYUw6oeHz6qqR4zdYMOAxcbiKkyozV0EY4HAVxZ7SrvHoGFfQeSLEct5VJtlXRBKF96JXUuzEDS45Ofxgn5g-nbfdb2xPLYJIWl6se6EDGudB_-Z0lFPx0h_C5HqVhYbTJ0KEUWue_B6adbEluPDnT2p9xNhJJTXEzWeSeBlJf9TlTWjs7"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof Section -->
+<section class="py-24 bg-surface-container-low/30">
+<div class="max-w-7xl mx-auto px-8">
+<p class="text-center text-on-surface-variant font-label text-sm uppercase tracking-[0.2em] mb-12">Trusted by the innovators at</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+<img alt="Company Logo" class="h-8 md:h-10" data-alt="Minimalist abstract corporate logo for a tech company in white silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIpvi7MjUr_KwSgAYFOSWK8BD7ZiqNtQ27gkvfy0O-KHVaszfVzlknKVsRzy5OjJp5j821sgPJCKCIz9ZpahLe4v3LPkGl3IT7gtfOkNXzSYUGq8fh2Vt__MySFIym_BKLTiGX7wS5Ul3yDDUl-k556TqL5guMIPZNRL9N7f5yD-kpAla683Rq12apS7Ltm6Wpdx_8m1h4S-AFilUdJcWlajPOosCCNvEGQwi2SQUQ_lPquAf-DOeH7FIAA1R1ziKLBs9BKHyLUHwV"/>
+<img alt="Company Logo" class="h-8 md:h-10" data-alt="Modern geometric emblem logo for a venture capital firm in white silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvYvlrNnb5psjogjM4NdbQQOQCSMOaSj_4l79MDa07G9G5WKP6HvOmhL7akr5jzBE3NDlSq_dAUTNh9SsvE0S78ZilZQYib9l_7AAZNUKhbzVXSP6aXvD_fQSXITiKWIToAEn1SoF8r-3N7MJU5QGdbho2he5tj0CejTdZiyj-2nd59zZL_WfIXye9uYZYw0VscH7NdPD0xG8tvXD63PaUNAYAYMxs6vp1nEE88jpjcQGUUz6E1UIxmVhuo6ZQ1733-mpucNAm1zAQ"/>
+<img alt="Company Logo" class="h-8 md:h-10" data-alt="Futuristic typographic logo for a software engineering agency in white silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKeyoW30YwSk32EYQSSVlgdLaCpalWJMHqk4HZH62O_6BhP_ckFngkz0teV-qXAsrsQLXibrcYbxCBr7hHZMvkAqhp0HGxNr9WOVoelg3VEExmPXZj4dfcHwRZxkmrubmJi8m9ZxNb7nwqVoy1vs8v5G_YG_OF60CBJPa55Xuw7T9eU9hUr7M0i-kPecBUbtRrwqr6LMXC_gfDnok5q089w0bNPX9rTQ0qhyO2FnbZ_GrSWjFHcsBv7EVXDgj0jyypbvHRJO69OZPI"/>
+<img alt="Company Logo" class="h-8 md:h-10" data-alt="Sleek sans-serif wordmark logo for a global logistics platform in white silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeMsrkPBo3RXgaxlPLd3QFkZDWvKBc0gC9zkPhuktT_4C7reqhF6RhMTZj4VkW9FQfsSvjg3XdwQ6kHAOLkwlKv3-3UJsWOA8x8gVYg1o9hNjc7wO8yA1cmAeyPU4yinnHXT_IDQJ8DzOdneVhgKOvJKRPSDYJRfPur5dfyBoVmwoR3zbwCPsjzdZe0fOtwluSOei6zPO7StH0qIxFPeQ0IDIewrM_23W__wA99CEiA8u-L9PRJ9bMx5Ua57FrhQtnjFN163xHoPxq"/>
+<img alt="Company Logo" class="h-8 md:h-10" data-alt="Abstract circular logo for a creative design studio in white silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdghBCTIESmdMLu0emefFwZSnFOb3ALUeMfrFeqmQnSc15l9Jh7b2fbeaeo1e8OgV_ztaOH_KUkqTNXVYYavuXh4yV8Z4Q-PxMqSAOQN6n8f7DJBgtvV_3Gr7rxJdHCPDrhIbzFO4Heh8UJx4iKbjfLgP4Fv7mXkmTeUe__YyBLc7LwfcwYTnw91CYJgVNBTCfjiUiTehe0oaZf0l5dYTT-4WSzRN5pVx6NELhxmDmhfQBqRKxxcra1d60yWA-5a-sFmy60bwh1IqY"/>
+</div>
+</div>
+</section>
+<!-- High-Level Feature Overview (Bento Grid) -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="mb-20">
+<h2 class="text-3xl md:text-5xl font-headline font-extrabold tracking-tight mb-6">Designed for the <span class="text-primary">0.1%.</span></h2>
+<p class="text-on-surface-variant max-w-xl text-lg">We stripped away the noise to give you pure, unadulterated focus. Your workflow, magnified.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Feature 1: Large -->
+<div class="md:col-span-8 bg-surface-container rounded-2xl p-8 flex flex-col justify-between min-h-[400px] group hover:bg-surface-container-high transition-colors">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">analytics</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Neural Data Synthesis</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">Our proprietary engine connects your disparate data sources and visualizes them through a single lens of truth.</p>
+</div>
+<div class="mt-8 rounded-xl overflow-hidden outline outline-1 outline-outline-variant/15">
+<img alt="Data Synthesis Visualization" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up of a glowing neural network pattern with ethereal indigo and pink light paths on a dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIHf_EMn9rFZRupsT1IWVheOcabRAtkjH5paYTTAiYIUZllI6-HG_p1WZux0S6Wzd_njPmzXR5IDWGNBZ7a_Q6o750-S1i9aO_Jqt7b9Sd1zdbMT4gJLBEDwsOuxVH-lnoxB7m7gTojlVo3OkCtKhbAJG4gCqxDdkxCa5DZwxGH-ToQaHPVfT_EnZBAwoaGWeZ5GJzF7a3WSNgEyjILnUW8y0J23DljCrggq8_Ayus7ABuRgw_xIfn73cKwJZgLnBGwHICComImtwY"/>
+</div>
+</div>
+<!-- Feature 2: Small -->
+<div class="md:col-span-4 bg-surface-container-highest rounded-2xl p-8 flex flex-col group hover:bg-surface-bright transition-colors">
+<div class="w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center text-tertiary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Real-time Velocity</h3>
+<p class="text-on-surface-variant leading-relaxed">Zero latency synchronization across your global workforce. If it happens there, you see it here. Instantly.</p>
+<div class="mt-auto pt-8">
+<div class="flex items-center gap-1">
+<div class="h-1 w-full bg-tertiary/20 rounded-full overflow-hidden">
+<div class="h-full w-4/5 bg-tertiary shadow-[0_0_10px_#ffa4e4]"></div>
+</div>
+<span class="text-[10px] font-label text-tertiary ml-2">99.9%</span>
+</div>
+</div>
+</div>
+<!-- Feature 3: Small -->
+<div class="md:col-span-4 bg-surface-container-high rounded-2xl p-8 group hover:bg-surface-container transition-colors">
+<div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Fortress Protocol</h3>
+<p class="text-on-surface-variant leading-relaxed">Enterprise-grade encryption is our baseline. Your data never leaves your governance zone.</p>
+</div>
+<!-- Feature 4: Large -->
+<div class="md:col-span-8 bg-surface-container-low rounded-2xl p-8 flex flex-col md:flex-row gap-8 items-center border border-outline-variant/10">
+<div class="flex-1">
+<div class="w-12 h-12 rounded-xl bg-primary-dim/10 flex items-center justify-center text-primary-dim mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">hub</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Unified Ecosystem</h3>
+<p class="text-on-surface-variant leading-relaxed">Native integrations with 100+ platforms. Stop context switching and start executing at the speed of thought.</p>
+</div>
+<div class="flex-1 grid grid-cols-3 gap-3">
+<div class="aspect-square bg-surface-container rounded-lg flex items-center justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-on-surface-variant">terminal</span>
+</div>
+<div class="aspect-square bg-surface-container rounded-lg flex items-center justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-on-surface-variant">database</span>
+</div>
+<div class="aspect-square bg-surface-container rounded-lg flex items-center justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-on-surface-variant">cloud</span>
+</div>
+<div class="aspect-square bg-surface-container rounded-lg flex items-center justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-on-surface-variant">api</span>
+</div>
+<div class="aspect-square bg-surface-container rounded-lg flex items-center justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-on-surface-variant">code</span>
+</div>
+<div class="aspect-square bg-surface-container rounded-lg flex items-center justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-on-surface-variant">settings_ethernet</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 px-8 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 -z-10"></div>
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-4xl md:text-6xl font-headline font-extrabold tracking-tight mb-8">Ready to step into the observatory?</h2>
+<p class="text-on-surface-variant text-lg mb-12 max-w-xl mx-auto">Join the 10,000+ teams who have transcended traditional workflows. Your future is waiting.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto px-10 py-5 bg-gradient-to-r from-primary to-primary-container text-on-primary-fixed font-headline font-extrabold rounded-xl text-lg shadow-xl shadow-primary/20 active:scale-95 transition-all">
+                        Create Your Workspace
+                    </button>
+<button class="w-full sm:w-auto px-10 py-5 font-headline font-bold text-on-surface hover:text-primary transition-colors">
+                        Talk to an Expert
+                    </button>
+</div>
+<p class="mt-8 text-sm text-on-surface-variant/60 font-label">No credit card required. 14-day premium trial included.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-[#0b082f] w-full py-12 border-t border-slate-200 dark:border-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-xl font-black text-indigo-600 dark:text-[#9ba8ff] font-headline mb-6">
+                    TALVAD
+                </div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                    Illuminating workflows through a lens of absolute precision. Part of the Neon Observatory project.
+                </p>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-headline font-bold text-on-surface mb-6">Platform</h4>
+<ul class="space-y-4 font-['Inter'] text-sm tracking-normal">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-[#ffa4e4] transition-colors" href="#">Features</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-[#ffa4e4] transition-colors" href="#">Pricing</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-[#ffa4e4] transition-colors" href="#">Newsletter</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-headline font-bold text-on-surface mb-6">Company</h4>
+<ul class="space-y-4 font-['Inter'] text-sm tracking-normal">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-[#ffa4e4] transition-colors" href="#">Contact</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-[#ffa4e4] transition-colors" href="#">Privacy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-[#ffa4e4] transition-colors" href="#">Terms</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-headline font-bold text-on-surface mb-6">Stay Updated</h4>
+<div class="flex flex-col gap-4">
+<input class="bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-[#9ba8ff] outline-none" placeholder="Email address" type="email"/>
+<button class="bg-indigo-600 dark:bg-[#9ba8ff] text-on-primary font-bold py-3 rounded-lg text-sm active:scale-95 transition-all">Subscribe</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 dark:text-slate-400 text-xs font-['Inter']">© 2024 TALVAD. The Neon Observatory.</p>
+<div class="flex gap-6">
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">language</span></a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+</div>
+</div>
+</footer>
+</body></html>
