@@ -42,7 +42,7 @@ const FeatureGrid = () => {
 						<img
 							alt="Data Synthesis Visualization"
 							className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-700"
-							src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIHf_EMn9rFZRupsT1IWVheOcabRAtkjH5paYTTAiYIUZllI6-HG_p1WZux0S6Wzd_njPmzXR5IDWGNBZ7a_Q6o750-S1i9aO_Jqt7b9Sd1zdbMT4gJLBEDwsOuxVH-lnoxB7m7gTojlVo3OkCtKhbAJG4gCqxDdkxCa5DZwxGH-ToQaHPVfT_EnZBAwoaGWeZ5GJzF7a3WSNgEyjILnUW8y0J23DljCrggq8_Ayus7ABuRgw_xIfn73cKwJZgLnBGwHICComImtwY"
+							src="./images/homepage/neural_network.png"
 						/>
 					</div>
 				</div>
