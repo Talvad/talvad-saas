@@ -17,8 +17,10 @@ export default function Header() {
 					{headerNavLinks.map((link) => (
 						<Link
 							key={link.to}
-							className="text-slate-500 hover:text-indigo-500 transition-colors"
+							className=" hover:text-secondary transition-colors"
 							to={link.to}
+							activeProps={{ className: "text-primary" }}
+							inactiveProps={{ className: "text-on-surface" }}
 						>
 							{link.label}
 						</Link>

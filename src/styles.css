@@ -180,3 +180,10 @@
     @apply bg-surface text-on-surface font-body;
     }
 }
+.glass-panel {
+            backdrop-filter: blur(12px);
+            background: rgba(34, 30, 85, 0.4);
+        }
+        .glow-gauge {
+            box-shadow: 0 0 15px -3px rgba(255, 164, 228, 0.5);
+        }
