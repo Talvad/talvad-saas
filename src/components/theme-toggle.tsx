@@ -30,9 +30,13 @@ export function ThemeToggle() {
 		<button
 			type="button"
 			onClick={toggleTheme}
-			className="p-2 rounded-lg border border-on-surface/10 bg-surface text-on-surface hover:opacity-80 transition-opacity"
+			className="p-1 rounded-full border border-on-surface/10 bg-surface text-on-surface hover:opacity-80 transition-opacity"
 		>
-			{theme === "light" ? <Moon /> : <Sun />}
+			{theme === "light" ? (
+				<Moon className="size-4" />
+			) : (
+				<Sun className="size-4" />
+			)}
 		</button>
 	);
 }
